@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="">
+    <title> @hellenahill_- 71231053 - Personal Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><H1> THIS IS ME 
+    </H1>
+        <h1>
+            <marquee behavior="scroll" direction="right">Hallo welcome to my page, dear</marquee>
+        </h1>
+        <meta charset="UTF-8">
+        
+    </header>
+    <section id="foto">
+        <img src="hillpage.jpg" width ="350" style="border: 10px solid #000;">
+    </section>
+    <section id="tentang-saya">
+        <h2>
+            Hellena Beverly Hill Fonataba
+        </h2>
+        <type>
+            follow my IG: @hellenahill_
+        </type>
+        <h3>
+            Sorong City, Southwest Papua, Indonesia
+        </h3>
+        <h4>
+            Duta Wacana Christian University
+        </h4>
+    </section>
+    <section id="keterampilan">
+        <h5>
+            My Skills:
+            <ol>
+                <li>Coding C</li>
+                <li>Coding HTML</li>
+            </ol>
+        </h5>
+    </section>
+    <h6>This is My Favorit Music and you should listen to it</h6>
+    <audio controls>
+        <source src="WhatsApp Audio 2023-12-12 at 17.32.57_032782f5.dat" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+     <button id="tombolGantiWarna">Ganti Warna</button>
+     
+
+     <footer>
+     <h6>Thank You For Visiting</h6>
+     <marquee behavior="scroll" direction="right">Have Great Day, Dear</marquee>
+     </footer>
+ 
+     <script>
+         const bodyElement = document.body;
+ 
+         function gantiWarnaRandom() {
+             const warnaList = ['##ff0000', '#0000ff', '##008000', '#ffffff']
+             const randomIndex = Math.floor(Math.random() * warnaList.length);
+             const warnaRandom = warnaList[randomIndex];
+             bodyElement.style.backgroundColor = warnaRandom;
+         }
+ 
+         const tombolGantiWarna = document.getElementById('tombolGantiWarna')
+         tombolGantiWarna.addEventListener('click',gantiWarnaRandom)
+     </script>
+ </body>
+ </html>
